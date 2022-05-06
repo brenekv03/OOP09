@@ -19,7 +19,7 @@ namespace OOP09
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Stroj stroj = new Stroj("A15", DateTime.Parse("06-02-2022"));
+            Stroj stroj = new Stroj("15", DateTime.Parse("06-02-2022"));
             stroj.ProvedServis();
             MessageBox.Show( stroj.ToString());
         }

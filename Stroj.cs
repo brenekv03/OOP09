@@ -20,16 +20,18 @@ namespace OOP09
             {
                 string s = value;
                 int i = 0;
-                while(i<=1)
+                string substr = s.Substring(i);
+                while (i<=1)
                 {
                     if (!char.IsLetter(s[i]))
                     {
-                        string substr = s.Substring(i);
+                        
                         s = s.Replace(s[i], 'A');
-                        s +=substr;
+                        
                     }
                     else ++i;
                 }
+                s += substr;
                 evidencniCislo = s;
             }
         }
