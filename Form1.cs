@@ -16,5 +16,20 @@ namespace OOP09
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Stroj stroj = new Stroj("A15", DateTime.Parse("06-02-2022"));
+            stroj.ProvedServis();
+            MessageBox.Show( stroj.ToString());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Automat automat = new Automat("A15", DateTime.Parse("06-02-2022"), false);
+            automat.ProvedServis();
+            automat.Preprogramuj();
+            MessageBox.Show( automat.ToString());
+        }
     }
 }
