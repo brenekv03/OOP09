@@ -43,7 +43,7 @@ namespace OOP09
         }
         public virtual void ProvedServis()
         {
-            if (DateTime.Today > posledniServis.AddDays(42))
+            if (DateTime.Today >= posledniServis.AddDays(42))
             {
                 posledniServis = DateTime.Today;
             }
