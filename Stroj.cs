@@ -38,7 +38,7 @@ namespace OOP09
             EvidencniCislo = evidencniCislo;
             UvedenDoProvozu = uvedenDoProvozu;
         }
-        public void ProvedServis()
+        public virtual void ProvedServis()
         {
             if (DateTime.Today > posledniServis.AddDays(42))
             {
