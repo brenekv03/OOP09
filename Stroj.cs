@@ -26,6 +26,7 @@ namespace OOP09
                     {
                         string substr = s.Substring(i);
                         s = s.Replace(s[i], 'A');
+                        s +=substr;
                     }
                     else ++i;
                 }

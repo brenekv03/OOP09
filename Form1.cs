@@ -28,7 +28,6 @@ namespace OOP09
         {
             Automat automat = new Automat("A15", DateTime.Parse("06-02-2022"), false);
             automat.ProvedServis();
-            automat.Preprogramuj();
             MessageBox.Show( automat.ToString());
         }
     }

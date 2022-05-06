@@ -14,10 +14,9 @@ namespace OOP09
         {
             this.preprogramovan = preprogramovan;
         }
-        public bool Preprogramuj()
+        public void Preprogramuj()
         {
             preprogramovan = true;
-            return preprogramovan;
         }
         public override void ProvedServis()
         {
