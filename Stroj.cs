@@ -25,9 +25,7 @@ namespace OOP09
                 {
                     if (!char.IsLetter(s[i]))
                     {
-                        
                         s = s.Replace(s[i], 'A');
-                        
                     }
                     else ++i;
                 }
